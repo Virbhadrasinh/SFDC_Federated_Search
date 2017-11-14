@@ -12,6 +12,9 @@ http.createServer(function (req, res) {
 	if(req.url.lastIndexOf("/search.iv") >=0){
 		res.writeHead(200, {"Content-Type" : "application/xml"});
 		res.end(fs.readFileSync(__dirname + "/results.xml"));
+	} else if(req.url.lastIndexOf("/search.in") >=0){
+		res.writeHead(200, {"Content-Type" : "application/xml"});
+		res.end(fs.readFileSync(__dirname + "/example_atom.xml"));
 	} else {
 		res.writeHead(200);
 		res.end("hello world\n");

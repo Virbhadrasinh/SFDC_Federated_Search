@@ -7,11 +7,11 @@
 	<sfdc:RecordTypes>
 		<sfdc:RecordType name="InsideView">
 			<sfdc:Field name="Author" type="string" sortable="true"/>
-			<sfdc:Field name="EmployeesSize" type="string" sortable="false"/>
-			<sfdc:Field name="Revenue" type="string" sortable="false"/>
-			<sfdc:Field name="Address" type="string" sortable="false"/>
-			<sfdc:Field name="Website" type="url" sortable="false"/>
-			<sfdc:Field name="Source" type="string" sortable="false"/>
+			<sfdc:Field name="Employees" type="string" sortable="true"/>
+			<sfdc:Field name="Revenue" type="string" sortable="true"/>
+			<sfdc:Field name="Address" type="string" sortable="true"/>
+			<sfdc:Field name="Website" type="string" sortable="true"/>
+			<sfdc:Field name="Source" type="string" sortable="true"/>
 		</sfdc:RecordType>
 	</sfdc:RecordTypes>
 	<Attribution>Copyright 2017 InsideView, Inc. All rights reserved.</Attribution>

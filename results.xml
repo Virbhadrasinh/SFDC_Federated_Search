@@ -6,9 +6,9 @@
     	<name>InsideView Technologies, Inc.</name>
     </author>
     <id>urn:uuid:6b63a81d-0a77-48e3-8a74-5d5f34b9da98</id>
-    <opensearch:totalResults>5</opensearch:totalResults>
+    <opensearch:totalResults>1</opensearch:totalResults>
     <opensearch:startIndex>0</opensearch:startIndex>
-    <opensearch:itemsPerPage>20</opensearch:itemsPerPage>
+    <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
     <opensearch:Query role="request" searchTerms="inside" startIndex="0" count="10"/>
     <entry>
         <title>InsideView Technologies, Inc.</title>
@@ -16,7 +16,7 @@
         <link href="https://my.insideview.com/iv/company.iv?id=781163#overview" title="InsideView Technologies, Inc."/>
         <sfdc:recordType>InsideView</sfdc:recordType>
         <sfdc:Author>InsideView</sfdc:Author>
-        <sfdc:EmployeesSize>240</sfdc:EmployeesSize>
+        <sfdc:Employees>240</sfdc:Employees>
         <sfdc:Revenue>32 Million USD</sfdc:Revenue>
         <sfdc:Address>444 De Haro Street Suite 210, San Francisco, CA 94107, United States</sfdc:Address>
         <sfdc:Website>https://www.insideview.com/</sfdc:Website>
