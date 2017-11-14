@@ -1,0 +1,36 @@
+<apex:page showHeader="true">
+    <h1>Page URL : {!$CurrentPage.URL}</h1><br/>
+    <h1>Theme    : {!$User.UITheme}</h1><br/>
+    <h1>Displayed Theme : {!$User.UIThemeDisplayed}</h1>
+    
+    <apex:iframe id="iv_standalone_loader"/>
+    
+    
+    <script>
+        var userTheme = "{!$User.UITheme}";
+        var userDisplayedTheme = "{!$User.UITheme}";
+        var pageURL = "{!$CurrentPage.URL}";
+        
+        function getRequestParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        };
+        
+        var companyId = getRequestParameterByName("companyId", pageURL)
+        
+        var ifrm = document.getElementById("iv_standalone_loader");
+        
+        var ifrmURL = "https://my.insideview.com/iv/activitystream.iv";
+        
+        if(companyId && companyId !== "") {
+           ifrmURL = "https://my.insideview.com/iv/company.iv?id="+companyId;
+        
+        }
+        ifrm.setAttribute("src", ifrmURL);
+    </script>
+</apex:page>
