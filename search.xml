@@ -10,7 +10,7 @@
 			<sfdc:Field name="Employees" type="string" sortable="true"/>
 			<sfdc:Field name="Revenue" type="string" sortable="true"/>
 			<sfdc:Field name="Address" type="string" sortable="true"/>
-			<sfdc:Field name="Website" type="string" sortable="true"/>
+			<sfdc:Field name="Website" type="url" sortable="true"/>
 			<sfdc:Field name="Source" type="string" sortable="true"/>
 		</sfdc:RecordType>
 	</sfdc:RecordTypes>

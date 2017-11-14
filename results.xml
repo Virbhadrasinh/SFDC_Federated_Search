@@ -13,8 +13,8 @@
     <entry>
         <title>InsideView Technologies, Inc.</title>
         <id>company-781163</id>
-        <link href="https://my.insideview.com/iv/company.iv?id=781163#overview" title="InsideView Technologies, Inc."/>
-        <sfdc:recordType>InsideView</sfdc:recordType>
+        <link href="https://vir-iv-test.ap6.visual.force.com/apex/IVS_SA?sfdc.tabName=01r0K000000iaJC&amp;companyId=781163" title="InsideView Technologies, Inc."/>
+        <sfdc:recordType>InsideView Technologies, Inc.</sfdc:recordType>
         <sfdc:Author>InsideView</sfdc:Author>
         <sfdc:Employees>240</sfdc:Employees>
         <sfdc:Revenue>32 Million USD</sfdc:Revenue>
