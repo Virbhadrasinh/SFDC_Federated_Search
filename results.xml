@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:sfdc="http://salesforce.com/2016/federatedsearch/1.0">
+    <title>InsideView Federated</title>
+    <updated>2016-11-21T10:19:37.644Z</updated>
+    <author>
+    	<name>InsideView Technologies, Inc.</name>
+    </author>
+    <id>urn:uuid:6b63a81d-0a77-48e3-8a74-5d5f34b9da98</id>
+    <opensearch:totalResults>5</opensearch:totalResults>
+    <opensearch:startIndex>0</opensearch:startIndex>
+    <opensearch:itemsPerPage>20</opensearch:itemsPerPage>
+    <opensearch:Query role="request" searchTerms="inside" startIndex="0" count="10"/>
+    <entry>
+        <title>InsideView Technologies, Inc.</title>
+        <id>company-781163</id>
+        <link href="https://my.insideview.com/iv/company.iv?id=781163#overview" title="InsideView Technologies, Inc."/>
+        <sfdc:recordType>InsideView</sfdc:recordType>
+        <sfdc:Author>InsideView</sfdc:Author>
+        <sfdc:EmployeesSize>240</sfdc:EmployeesSize>
+        <sfdc:Revenue>32 Million USD</sfdc:Revenue>
+        <sfdc:Address>444 De Haro Street Suite 210, San Francisco, CA 94107, United States</sfdc:Address>
+        <sfdc:Website>https://www.insideview.com/</sfdc:Website>
+        <sfdc:Source>S&amp;P Capital IQ Record,LinkSV Record,Equifax Record,InsideView Record</sfdc:Source>
+        <summary>InsideView Technologies, Inc. (InsideView) provides on-demand sales and marketing applications for mining and aggregating information on prospective customers. It offers actionable intelligence for sales and marketing organizations. The company discovers selling opportunities, notifies salespeople in real time, and delivers relevant information on companies and connections to engage customers and close sales. It provides InsideView for salesforce.com, Microsoft Dynamics, and NetSuite, a social intelligence application for CRM and ERP business processes, as well as allows users to access relevant intelligence from social media and editorial sources directly within their CRM systems. The company was founded in 2005 and is headquartered in San Francisco with additional operations in Austin, Texas and Hyderabad, India.</summary>
+    </entry>
+</feed>

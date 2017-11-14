@@ -9,9 +9,9 @@ http.createServer(function (req, res) {
 	console.log("req.params--->",req.params);
 	console.log("req.query--->",req.query);
 	
-	if(req.url.lastIndexOf("/search.in") >=0){
+	if(req.url.lastIndexOf("/search.iv") >=0){
 		res.writeHead(200, {"Content-Type" : "application/xml"});
-		res.end(fs.readFileSync(__dirname + "/example_atom.xml"));
+		res.end(fs.readFileSync(__dirname + "/results.xml"));
 	} else {
 		res.writeHead(200);
 		res.end("hello world\n");

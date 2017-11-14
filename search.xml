@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:sfdc="http://salesforce.com/2016/federatedsearch/1.0">
-	<ShortName>Salesforce Federated Search POC</ShortName>
-	<Contact>virbhadrasinh.18@gmail.com</Contact>
+	<ShortName>InsideView Federated</ShortName>
+	<Contact>support@insideview.com</Contact>
 	<Url type="application/atom+xml" sfdc:maxTotalResults="500" 
-	template="https://sfdcfspoc.herokuapp.com/search.in?q={searchTerms}&amp;userID={sfdc:userId}&amp;orgId={sfdc:orgId}"/>
+	template="https://sfdcfspoc.herokuapp.com/search.iv?q={searchTerms}&amp;userID={sfdc:userId}&amp;orgId={sfdc:orgId}"/>
 	<sfdc:RecordTypes>
-		<sfdc:RecordType name="Vir Chauhan Test">
+		<sfdc:RecordType name="InsideView">
 			<sfdc:Field name="Author" type="string" sortable="true"/>
-			<sfdc:Field name="Source" type="string" sortable="true"/>
-			<sfdc:Field name="Date" type="date" sortable="true"/>
+			<sfdc:Field name="EmployeesSize" type="string" sortable="false"/>
+			<sfdc:Field name="Revenue" type="string" sortable="false"/>
+			<sfdc:Field name="Address" type="string" sortable="false"/>
+			<sfdc:Field name="Website" type="url" sortable="false"/>
+			<sfdc:Field name="Source" type="string" sortable="false"/>
 		</sfdc:RecordType>
 	</sfdc:RecordTypes>
-	<Attribution>
-		Copyright 2017, virbhadrasinh.18@gmail.com, All Rights Reserved
-	</Attribution>
+	<Attribution>Copyright 2017 InsideView, Inc. All rights reserved.</Attribution>
 	<InputEncoding>UTF-8</InputEncoding>
 	<OutputEncoding>UTF-8</OutputEncoding>
 	<sfdc:Version>1</sfdc:Version>
