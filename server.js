@@ -1,5 +1,6 @@
 var http = require('http'), 
-	fs = require('fs');
+	fs = require('fs'),
+	decode = require('signed-request');
 
 http.createServer(function (req, res) {
 	console.log("req.url--->",req.url);
@@ -15,6 +16,15 @@ http.createServer(function (req, res) {
 	} else if(req.url.lastIndexOf("/search.in") >=0){
 		res.writeHead(200, {"Content-Type" : "application/xml"});
 		res.end(fs.readFileSync(__dirname + "/example_atom.xml"));
+	} else if(req.url.lastIndexOf("/standalone.iv") >=0) {
+		//res.writeHead(200, {"Content-Type" : "application/xml"});
+		//res.end(fs.readFileSync(__dirname + "/example_atom.xml"));
+		
+		
+		 
+		 
+		 var json = decode('YOUR_SIGNED_REQUEST', '1190220089075654466');
+		
 	} else {
 		res.writeHead(200);
 		res.end("hello world\n");

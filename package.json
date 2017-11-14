@@ -4,7 +4,8 @@
   "private": true,
   "dependencies": {
     "serve-static": "~1.11.1",
-    "finalhandler": "~0.5.0"
+    "finalhandler": "~0.5.0",
+    "npm i salesforce-signed-request" : "0.0.1"
   },
   "scripts" : {
    "serve" : "node server.js"
