@@ -19,8 +19,6 @@ http.createServer(function (req, res) {
 	console.log("req.query--->",req.query);
 	console.log("req.method--->",req.method);
 	
-	
-	
 	if(req.url.lastIndexOf("/search.iv") >=0){
 		res.writeHead(200, {"Content-Type" : "application/xml"});
 		res.end(fs.readFileSync(__dirname + "/results.xml"));
