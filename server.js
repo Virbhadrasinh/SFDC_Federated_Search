@@ -31,7 +31,6 @@ http.createServer(function (req, res) {
 		    console.log("req.data--->",body);
 		    var signed_request = body.substring(body.lastIndexOf("signed_request=")+15,body.length);
 		    console.log("signed_request--->",signed_request);
-		    console.log("decodeURIComponent------->",decodeURIComponent);
 		    function decode(signed_request, secret) {
 		        if(!signed_request || !secret) {
 		            return new Error('Must pass both signed_request and api secret');
