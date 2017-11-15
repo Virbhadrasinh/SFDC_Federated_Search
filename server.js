@@ -1,22 +1,25 @@
-var http = require('http');
-//var https = require('https');
+//var http = require('http');
+var https = require('https');
 var fs = require('fs');
 var base64url = require('base64url');
 var crypto = require('crypto');
 
-//var options = {
-//  key: fs.readFileSync('privateKey.key'),
-//  cert: fs.readFileSync('certificate.crt')
-//};
+var options = {
+  key: fs.readFileSync('privateKey.key'),
+  cert: fs.readFileSync('certificate.crt')
+};
 
-http.createServer(function (req, res) {
-//https.createServer(options, function (req, res) {
+//http.createServer(function (req, res) {
+https.createServer(options, function (req, res) {
 	console.log("req.url--->",req.url);
 	console.log("req.headers--->",req.headers);
 	console.log("req.body--->",req.body);
 	console.log("req.cookies--->",req.cookies);
 	console.log("req.params--->",req.params);
 	console.log("req.query--->",req.query);
+	console.log("req.method--->",req.method);
+	
+	
 	
 	if(req.url.lastIndexOf("/search.iv") >=0){
 		res.writeHead(200, {"Content-Type" : "application/xml"});
@@ -29,6 +32,7 @@ http.createServer(function (req, res) {
 		req.on('data', function (chunk) {
 			body += chunk;
 		    console.log("req.data--->",body);
+		    console.log("chunk--->",chunk.toString());
 		    var signed_request = body.substring(body.lastIndexOf("signed_request=")+15,body.length);
 		    console.log("signed_request--->",signed_request);
 		    function decode(signed_request, secret) {
