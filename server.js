@@ -1,16 +1,16 @@
-//var http = require('http');
-var https = require('https');
+var http = require('http');
+//var https = require('https');
 var fs = require('fs');
 var base64url = require('base64url');
 var crypto = require('crypto');
 
-var options = {
-  key: fs.readFileSync('privateKey.key'),
-  cert: fs.readFileSync('certificate.crt')
-};
+//var options = {
+//  key: fs.readFileSync('privateKey.key'),
+//  cert: fs.readFileSync('certificate.crt')
+//};
 
-//http.createServer(function (req, res) {
-https.createServer(options, function (req, res) {
+http.createServer(function (req, res) {
+//https.createServer(options, function (req, res) {
 	console.log("req.url--->",req.url);
 	console.log("req.headers--->",req.headers);
 	console.log("req.body--->",req.body);
