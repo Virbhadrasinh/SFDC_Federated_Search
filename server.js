@@ -19,9 +19,12 @@ http.createServer(function (req, res) {
 	console.log("req.query--->",req.query);
 	console.log("req.method--->",req.method);
 	
-	if(req.url.lastIndexOf("/search.iv") >=0){
+	if(req.url.lastIndexOf("/test.iv") >=0){
 		res.writeHead(200, {"Content-Type" : "application/xml"});
-		res.end(fs.readFileSync(__dirname + "/results.xml"));
+		res.end(fs.readFileSync(__dirname + "/test_output.xml"));
+	} else if(req.url.lastIndexOf("/search.iv") >=0){
+		res.writeHead(200, {"Content-Type" : "application/xml"});
+		res.end(fs.readFileSync(__dirname + "/example_atom.xml"));
 	} else if(req.url.lastIndexOf("/search.in") >=0){
 		res.writeHead(200, {"Content-Type" : "application/xml"});
 		res.end(fs.readFileSync(__dirname + "/example_atom.xml"));
